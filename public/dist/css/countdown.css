@@ -1,0 +1,139 @@
+body {
+
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif; /* Thay đổi font nếu cần */
+    color: #ffffff; /* Màu chữ trắng, đảm bảo đọc được trên ảnh nền */
+    background-image: url(./../../dist/img/leaves_green_dark_145996_3840x2400.jpg);
+}
+
+* {
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    position: relative;
+    margin-bottom: 1em;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+
+
+.toggle-button-container {
+    width: 50%;
+    float: left;
+}
+
+button {
+    display: inline-block;
+    height: 38px;
+    padding: 0 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 38px;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #eea1a1 ;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #eea1a1;
+}
+
+button[disabled] {
+    cursor: not-allowed;
+    background: #eea1a1;
+}
+
+#button-container {
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggle-timer {
+    width: 50px;
+    margin: 0 .1em;
+}
+
+#session-length,
+#break-length {
+    width: 40px;
+    height: 40px;
+    line-height: 37px;
+    margin-bottom: .4em;
+    display: inline-block;
+    background: #fff;
+    color: #fff;
+    border: solid 1px #eea1a1;
+    border-radius: 50%;
+}
+
+header {
+    display: none;
+    margin-bottom: .4em;
+}
+
+#countdown {
+    font-size: 6em;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+}
+
+#countdown-container {
+    padding-top: 1em;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+@media (min-width: 600px) {
+    #countdown-container {
+        width: 25em;
+        height: 25em;
+        padding-top: 9em;
+        border-radius: 50%;
+        border: 4px dashed #fff;
+    }
+}
+
+.break {
+    background: #e03e2d;
+    opacity: 50%;
+}
+
+.break button {
+    border-color: #98C3A1;
+}
+
+.break button:hover {
+    background: #98C3A1;
+}
+
+.break button[disabled] {
+    cursor: not-allowed;
+    background: #78a98c;
+}
+.d-none{
+    display: none;
+}
+#pause-session {
+    display: none; /* Ẩn nút Pause ban đầu */
+}
